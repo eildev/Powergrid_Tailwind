@@ -2,8 +2,113 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    ;
+    src: url('fonts/Inter/Inter-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    ;
+    src: url('fonts/Inter/Inter-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    ;
+    src: url('fonts/Inter/Inter-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    ;
+    src: url('fonts/Inter/Inter-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla', sans-serif;
+    ;
+    src: url('fonts/Karla/Karla-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla', sans-serif;
+    ;
+    src: url('fonts/Karla/Karla-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla', sans-serif;
+    ;
+    src: url('fonts/Karla/Karla-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla', sans-serif;
+    ;
+    src: url('fonts/Karla/Karla-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Titillium Web', sans-serif;
+    src: url('fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Titillium Web', sans-serif;
+    src: url('fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Titillium Web', sans-serif;
+    src: url('fonts/Titillium_Web/TitilliumWeb-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
-    font-family: "Inter" sans-serif;
-    color: #707070;
+    font-family: "Inter" sans-serif !important;
+    color: #707070 !important;
     background: #F6FCFC !important;
+}
+
+.bg-image {
+    background-image: url("../dist/img/banner/bannerimg.png");
+}
+
+
+.swiper-pagination-bullet {
+    height: 30px;
+    width: 30px;
+    border-radius: 7px;
+    margin-right: 20px;
+    background: #e2f3fb;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #1FBEF9;
 }
