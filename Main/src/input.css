@@ -112,3 +112,42 @@ body {
 .swiper-pagination-bullet-active {
     background: #1FBEF9;
 }
+
+#accordion-container {
+    width: 100%;
+    border-bottom: 1px solid #1FBEF9;
+    padding: 20px 0;
+}
+
+/* flex justify-between items-center w-full mb-5 */
+#accordion-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#accordion-heading.active {
+    color: #1fbef9;
+    transition: 0.4s ease-in-out !important;
+}
+
+#accordion-heading.active span i {
+    transform: rotate(180deg);
+    transition: 0.4s ease-in-out !important;
+}
+
+#accordion-collapse {
+    display: none;
+    transition: 0.4s ease-in-out !important;
+}
+
+#accordion-collapse.active {
+    display: block;
+    transition: 0.4s ease-in-out !important;
+}
+
+#accordion-collapse.active p {
+    transition: 0.4s ease-in-out !important;
+}

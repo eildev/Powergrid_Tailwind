@@ -52,3 +52,41 @@ var clientSwiper = new Swiper(".client-swiper", {
         clickable: true,
     },
 });
+
+
+
+
+// toggle function
+// const toggleFunc = (className, className2) => {
+//     const main = document.querySelector(className);
+//     const collapse = document.querySelector(className2);
+
+//     main.addEventListener("click", function () {
+//         main.classList.toggle() = "active";
+//         collapse.classList.toggle() = "active";
+//     });
+// }
+
+
+
+// console.log(accordionActive);
+
+// toggleFunc(".accordion", ".accordion-active");
+
+
+const accordion = document.querySelector("#accordion-heading");
+const accordionActive = document.querySelector("#accordion-collapse");
+
+
+
+accordion.addEventListener("click", function () {
+    accordion.classList.toggle("active");
+    accordionActive.classList.toggle("active");
+});
+
+
+// function toggleContent(item) {
+//     const content = item.nextElementSibling;
+//     content.classList.toggle('hidden');
+//     content.classList.toggle('h-auto');
+// }
