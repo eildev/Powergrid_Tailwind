@@ -1227,6 +1227,11 @@ video {
   padding-bottom: 50px;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1588,44 +1593,79 @@ body {
   background: #1FBEF9;
 }
 
-#accordion-container {
-  width: 100%;
-  border-bottom: 1px solid #1FBEF9;
-  padding: 20px 0;
+/* #accordion-container {
+    width: 100%;
+    border-bottom: 1px solid #1FBEF9;
+    padding: 20px 0;
 }
 
-/* flex justify-between items-center w-full mb-5 */
 
 #accordion-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 #accordion-heading.active {
-  color: #1fbef9;
-  transition: 0.4s ease-in-out !important;
+    color: #1fbef9;
+    transition: 0.4s ease-in-out !important;
 }
 
 #accordion-heading.active span i {
-  transform: rotate(180deg);
-  transition: 0.4s ease-in-out !important;
+    transform: rotate(180deg);
+    transition: 0.4s ease-in-out !important;
 }
 
 #accordion-collapse {
-  display: none;
-  transition: 0.4s ease-in-out !important;
+    display: none;
+    transition: 0.4s ease-in-out !important;
 }
 
 #accordion-collapse.active {
-  display: block;
-  transition: 0.4s ease-in-out !important;
+    display: block;
+    transition: 0.4s ease-in-out !important;
 }
 
 #accordion-collapse.active p {
-  transition: 0.4s ease-in-out !important;
+    transition: 0.4s ease-in-out !important;
+} */
+
+.accordion {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #1FBEF9;
+  padding-bottom: 10px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  padding: 10px;
+}
+
+.accordion-content {
+  height: 0;
+  padding-top: 40px;
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.accordion-content.active {
+  height: 150px;
+  padding-top: 40px;
 }
 
 .placeholder\:font-karla::-moz-placeholder {

@@ -56,6 +56,25 @@ var clientSwiper = new Swiper(".client-swiper", {
 
 
 
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(item => {
+    item.querySelector('.accordion-header').addEventListener('click', function () {
+        const content = this.nextElementSibling;
+        if (content.classList.contains('active')) {
+            content.classList.remove('active');
+        } else {
+            const openItem = document.querySelector('.accordion-content.active');
+            if (openItem) {
+                openItem.classList.remove('active');
+            }
+            content.classList.add('active');
+        }
+    });
+});
+
+
+
 // toggle function
 // const toggleFunc = (className, className2) => {
 //     const main = document.querySelector(className);
@@ -74,15 +93,15 @@ var clientSwiper = new Swiper(".client-swiper", {
 // toggleFunc(".accordion", ".accordion-active");
 
 
-const accordion = document.querySelector("#accordion-heading");
-const accordionActive = document.querySelector("#accordion-collapse");
+// const accordion = document.querySelector("#accordion-heading");
+// const accordionActive = document.querySelector("#accordion-collapse");
 
 
 
-accordion.addEventListener("click", function () {
-    accordion.classList.toggle("active");
-    accordionActive.classList.toggle("active");
-});
+// accordion.addEventListener("click", function () {
+//     accordion.classList.toggle("active");
+//     accordionActive.classList.toggle("active");
+// });
 
 
 // function toggleContent(item) {
