@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Responsive HTML Admin &amp; Dashboard Template based on Bootstrap 5 Documentation">
+  <meta name="author" content="NobleUI">
+  <meta name="keywords"
+    content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+  <title>Documentation | PowerGrid - Tailwind Engineering Website Template</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/theme/xq-light.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- End fonts -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="shortcut icon" href="../template/assets/images/favicon.png" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#sidebarNav">
+  <div class="main-wrapper">
+    <div class="sidebar">
+      <div class="logo-wrapper px-4 py-3">
+        <a href="../template/index.html" class="noble-ui-logo d-block">Power<span>Grid</span></a>
+      </div>
+      <ul class="nav flex-column my-4" id="sidebarNav">
+        <li class="nav-item"><a class="nav-link" href="#introduction"> <i data-feather="home"></i> Introduction </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#fileStructure"> <i data-feather="code"></i> File Structure </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#setupEnvironment"> <i data-feather="settings"></i> Setup
+            Environment </a></li>
+        <li class="nav-item"><a class="nav-link" href="#customization"> <i data-feather="sliders"></i> Customization
+          </a></li>
+        <li class="nav-item"><a class="nav-link" href="#credits"> <i data-feather="gift"></i> Credits </a></li>
+        <li class="nav-item"><a class="nav-link" href="#support"> <i data-feather="headphones"></i> Support </a></li>
+      </ul>
+    </div>
+    <div id="introduction" class="page-content p-4 p-md-5 pb-0 pb-md-0">
+      <h1 class="h4 mt-5 mb-4">PowerGrid - Tailwind Engineering Website Template </h1>
+      <p class="">Thank you so much for purchasingPowerGrid - Tailwind Engineering Website Template. If you have any
+        questions that are beyond the scope of this documentation, please feel free to email to <a
+          href="https://themeforest.net/user/eclipseintellitech" target="_blank">eclipseintellitech@gmail.com</a></p>
+      <hr class="my-5">
+      <div class="grid-margin">
+        <h4 class="mb-4">Introduction</h4>
+        <p>This theme is built on <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS version 3</a> - The
+          most popular
+          front-end component library. This theme extended Tailwind components and create custom components.</p>
+      </div>
+      <hr class="my-5" id="fileStructure">
+      <div class="grid-margin">
+        <h4 class="mb-4">What's include</h4>
+        <p>Power Grid comes with a simple and logically organized file structure for easy to understand and
+          maintainability.</p>
+        <textarea rows="4" cols="50" class="code-non-editable">
+Powergrid/
+├── main/
+          ├── dist/
+                    ├── img/
+                    ├── swiper/
+                              ├── swiper.css/
+                              ├── swiper.css/
+                    ├── index.html/
+                    ├── about.html/ 
+                    ├── services.html/ 
+                    ├── news.html/ 
+                    ├── gallery.html/ 
+                    ├── sister-concern.html/ 
+                    ├── contact.html/
+                    ├── output.css/
+                    ├── app.js/
+                    
+          ├── src/                  
+                    ├── fontawesome/
+                              ├── fontawesome.css/
+                    ├── fonts/
+                              ├── Inter/
+                              ├── Karla/
+                              ├── Titillium_Web/
+                    ├── icons
+          ├── tailwind.config.js
+          ├── package.json                           
+├── documentation/
+        </textarea>
+      </div>
+      <div class="grid-margin">
+        <hr class="my-5" id="setupEnvironment">
+
+        <h4 class="mb-4">Setup Environment for customization</h4>
+        <p class="mb-3">First you must have <a href="https://nodejs.org/en/" target="_blank">Node.js</a> installed in
+          your computer.</p>
+        <p class="mb-3">Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an
+          event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm,
+          is the largest ecosystem of open source libraries in the world.</p>
+        <p class="mb-4">We are using Tailwind Css which allows having complete automation to build flow. <a
+            href="https://gulpjs.com/" target="_blank"> here</a>.</p>
+        <h5 class="mb-3">Install dependency</h5>
+        <p class="mb-0">Install all dependency files just run command npm install
+        </p>
+        <textarea rows="4" cols="50" class="code-non-editable">npm install</textarea>
+        <p class="mb-0 mt-2">When all dependency install then run this command npm run dev. then you can customize this
+          projects</p>
+        <textarea rows="4" cols="50" class="code-non-editable">num run dev</textarea>
+
+
+        <hr class="my-5" id="customization">
+
+        <h4 class="mb-4">Customization </h4>
+        <p class="mb-3">You can customize various elements including navbar, sidebar, form elements etc by simply
+          editing tailwind css class</p>
+        <p class="mb-3">Make sure that the <code> npm run dev</code> npm task is running in the terminal to compile
+          input.css
+          files when you make changes. Once the changes are made, the input.css file will be compiled and the changes
+          will be
+          reflected in the browser after an automatic browser reload.</p>
+        <p>It is important to run <code> npm run dev</code> command from the directory where the node_modules is
+          located.
+        </p>
+        <br>
+        <hr class="my-5" id="credits">
+
+        <h4 class="mb-4">Credits</h4>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>Plugin</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>Tailwind CSS </td>
+                <td><a href="https://swiperjs.com/" target="_blank">https://tailwindcss.com/</a></td>
+              </tr>
+              <tr>
+                <td>Swiper Js</td>
+                <td><a href="https://swiperjs.com/" target="_blank">https://swiperjs.com/</a></td>
+              </tr>
+              <tr>
+                <td>Google Font</td>
+                <td><a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></td>
+              </tr>
+              <tr>
+                <td>Font Awesome 6</td>
+                <td><a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-5" id="support">
+
+        <h4 class="mb-4">Support</h4>
+        <!-- <p class="mb-5 pb-5">We are here to assist you, thank you for report any bug/issue to our email <a href="https://themeforest.net/item/nobleui-admin-dashboard-template/24606935/support" target="_blank">nobleui123@gmail.com</a>.</p> -->
+        <p class="mb-2">We are happy to help you. Please feel free to contact us through: <a
+            href="https://themeforest.net/user/eclipseintellitech"
+            target="_blank">https://themeforest.net/user/eclipseintellitech</a> if you
+          have any queries.</p>
+        <p class="mb-5 pb-5">If you liked our product, would you mind taking a few seconds to <b> write a review and
+            ⭐️⭐️⭐️⭐️⭐️ rating </b> for us, please? It means a lot to us. You can review the product from the <a
+            href="https://themeforest.net/user/eclipseintellitech" target="_blank">
+            https://themeforest.net/user/eclipseintellitech </a> page.</p>
+
+        <hr class="mt-5 mb-3">
+
+        <p class="mb-2">Copyright © 2022 <a href="https://themeforest.net/user/eclipseintellitech"
+            target="_blank">PowerGrid</a>.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/python/python.min.js"></script> -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
